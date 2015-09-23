@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ppamat.MainActivity" >
+
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_marginTop="20dp" >
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Hellow World!"/>
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Auto Tester"/>
+	    </LinearLayout>
+    
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_marginTop="20dp" >
+        <Button
+            android:id="@+id/btn_manage_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage History" />
+
+        <Button
+            android:id="@+id/btn_bts_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BTS TEST" />
+        
+    </LinearLayout> 
+
+	
+</LinearLayout>

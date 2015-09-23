@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ppamatoserver.MainActivity" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>
+<!-- From: file:/C:/Users/illion/Desktop/Research/ppam/app/AndroidStudio/MobileTeam_AndroidApplications/ppam2Observer/src/main/res/menu/main.xml -->

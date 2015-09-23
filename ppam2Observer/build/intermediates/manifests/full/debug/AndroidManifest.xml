@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ppamatoserver"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="22"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.ppamatoserver.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.ppamatoserver.ManageFileActivity" >
+        </activity>
+        <activity android:name="com.example.ppamatoserver.FileViewerActivity" >
+        </activity>
+        <activity android:name="com.example.ppamatoserver.PassBTInformActivity" >
+        </activity>
+        <activity
+            android:name="com.example.ppamatoserver.DeviceListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/select_device"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+
+        <service android:name="com.example.ppamatoserver.CommandSenderService" >
+        </service>
+        <!--
+		<receiver 
+		    android:name=".CommandSenderService$MessageChecker"
+		    android:enabled="true">
+            <intent-filter> 
+                <action android:name=".CommandSenderService.MessageChecker"/>
+            </intent-filter>
+		    
+		</receiver>
+        -->
+    </application>
+
+</manifest>

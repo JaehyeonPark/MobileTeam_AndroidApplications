@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ppamat.MainActivity" >
+
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_marginTop="20dp" >
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Hellow World!"/>
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Auto Tester"/>
+	    </LinearLayout>
+    
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_marginTop="20dp" >
+	    
+        <Button
+            android:id="@+id/btn_make_script"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Make Test Script" />
+
+        <Button
+            android:id="@+id/btn_run_script"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Run Test Script" />
+        
+    </LinearLayout> 
+	
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_marginTop="20dp" >
+	    <ListView
+	        android:id="@+id/script_viewer"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	    </ListView>
+	</LinearLayout>
+
+	
+</LinearLayout>
+<!-- From: file:/C:/Users/illion/Desktop/Research/ppam/app/AndroidStudio/MobileTeam_AndroidApplications/ppam2Tester/src/main/res/layout/activity_main.xml -->
