@@ -20,7 +20,8 @@ public class MainActivity extends Activity {
 	private Button btnManageFiles;
 	private Button btnTestBT;
     
-	
+	//edit for testing by dusan
+	//edit for testing2 by dusan
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
