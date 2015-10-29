@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MobileTeam_AndroidApplications.iml" filepath="$PROJECT_DIR$/MobileTeam_AndroidApplications.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ppam2ModulePower/ppam2ModulePower.iml" filepath="$PROJECT_DIR$/ppam2ModulePower/ppam2ModulePower.iml" />
       <module fileurl="file://$PROJECT_DIR$/ppam2Observer/ppam2Observer.iml" filepath="$PROJECT_DIR$/ppam2Observer/ppam2Observer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ppam2PassiveController/ppam2PassiveController.iml" filepath="$PROJECT_DIR$/ppam2PassiveController/ppam2PassiveController.iml" />
       <module fileurl="file://$PROJECT_DIR$/ppam2Tester/ppam2Tester.iml" filepath="$PROJECT_DIR$/ppam2Tester/ppam2Tester.iml" />
     </modules>
   </component>

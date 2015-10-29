@@ -1,2 +1,4 @@
 include ':ppam2Observer'
 include ':ppam2Tester'
+include ':ppam2ModulePower'
+include ':ppam2PassiveController'

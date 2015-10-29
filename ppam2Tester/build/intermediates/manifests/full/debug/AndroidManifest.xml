@@ -34,6 +34,10 @@
             android:configChanges="orientation|keyboardHidden" >
         </activity>
         <activity
+            android:name="com.example.ppamattester.MakeLightElementActivity"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
             android:name="com.example.ppamattester.MakeLocNetworkElementActivity"
             android:configChanges="orientation|keyboardHidden" >
         </activity>

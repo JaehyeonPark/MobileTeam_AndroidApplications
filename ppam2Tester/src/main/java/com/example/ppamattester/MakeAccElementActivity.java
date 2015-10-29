@@ -119,4 +119,14 @@ public class MakeAccElementActivity extends Activity {
 			}
 		}
 	};
+	public void onBackPressed(){
+
+		Toast.makeText(getApplicationContext(), "To main page", 500).show();
+		Intent ml = new Intent(getApplicationContext(),MakeScriptActivity.class);
+		ml.putExtra("listElements", listElements);
+		startActivity(ml);
+		finish();
+
+//		super.onBackPressed();
+	}
 }

@@ -26,6 +26,8 @@ public class MakeScriptActivity extends Activity {
 	Button btnMakeEnd;
 	Button btnMakeAccSet;
 	Button btnMakeAccEnd;
+	Button btnMakeLightSet;
+	Button btnMakeLightEnd;
 	Button btnMakeGpsSet;
 	Button btnMakeGpsEnd;
 	Button btnMakeNetworkSet;
@@ -46,8 +48,10 @@ public class MakeScriptActivity extends Activity {
         
     	btnMakeStart = (Button)findViewById(R.id.btn_make_str);
     	btnMakeEnd = (Button)findViewById(R.id.btn_make_end);
-    	btnMakeAccSet = (Button)findViewById(R.id.btn_make_acc);
-    	btnMakeAccEnd = (Button)findViewById(R.id.btn_make_accend);
+		btnMakeAccSet = (Button)findViewById(R.id.btn_make_acc);
+		btnMakeAccEnd = (Button)findViewById(R.id.btn_make_accend);
+		btnMakeLightSet = (Button)findViewById(R.id.btn_make_light);
+		btnMakeLightEnd = (Button)findViewById(R.id.btn_make_lightend);
     	btnMakeGpsSet = (Button)findViewById(R.id.btn_make_gps);
     	btnMakeGpsEnd = (Button)findViewById(R.id.btn_make_gpsend);
     	btnMakeNetworkSet = (Button)findViewById(R.id.btn_make_network);
@@ -56,12 +60,14 @@ public class MakeScriptActivity extends Activity {
     	btnMakeDefault = (Button)findViewById(R.id.btn_default);
     	
         adapter = new ArrayAdapter<TestScriptElement>(this, android.R.layout.simple_list_item_1, listElements);
-        scriptView.setAdapter(adapter);
+		scriptView.setAdapter(adapter);
 
     	btnMakeStart.setOnClickListener(mClickListener);
     	btnMakeEnd.setOnClickListener(mClickListener);
     	btnMakeAccSet.setOnClickListener(mClickListener);
     	btnMakeAccEnd.setOnClickListener(mClickListener);
+		btnMakeLightSet.setOnClickListener(mClickListener);
+		btnMakeLightEnd.setOnClickListener(mClickListener);
     	btnMakeGpsSet.setOnClickListener(mClickListener);
     	btnMakeGpsEnd.setOnClickListener(mClickListener);
     	btnMakeNetworkSet.setOnClickListener(mClickListener);
@@ -117,9 +123,20 @@ public class MakeScriptActivity extends Activity {
 				finish();
 				break;
 			case R.id.btn_make_accend :
-				listElements.add(new AccEndElement());
+				listElements.add(new LightEndElement());
 				adapter.notifyDataSetChanged();
 				break;
+				case R.id.btn_make_light :
+					Toast.makeText(getApplicationContext(), "To light element page", Toast.LENGTH_SHORT).show();
+					Intent mllight = new Intent(getApplicationContext(),MakeLightElementActivity.class);
+					mllight.putExtra("listElements", listElements);
+					startActivity(mllight);
+					finish();
+					break;
+				case R.id.btn_make_lightend :
+					listElements.add(new LightEndElement());
+					adapter.notifyDataSetChanged();
+					break;
 			case R.id.btn_make_gps :
 				Toast.makeText(getApplicationContext(), "To GPS element page", Toast.LENGTH_SHORT).show();
 				Intent mlgps = new Intent(getApplicationContext(),MakeLocGpsElementActivity.class);
@@ -148,8 +165,12 @@ public class MakeScriptActivity extends Activity {
 				adapter.notifyDataSetChanged();
 				break;
 			case R.id.btn_default :
-				listElements.add(new TestScriptElement(Integer.parseInt(""+editDefaultTime.getText())));
-				adapter.notifyDataSetChanged();
+				if((""+editDefaultTime.getText()).matches(".*[0-9].*")) {
+					listElements.add(new TestScriptElement(Integer.parseInt("" + editDefaultTime.getText())));
+					adapter.notifyDataSetChanged();
+				}
+				else
+					Toast.makeText(getApplicationContext(), "Not enough Parameters", 500).show();
 				break;
 			}
 		}

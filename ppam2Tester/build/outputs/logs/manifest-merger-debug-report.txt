@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml:2:1-49:12
+ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml:2:1-53:12
 	package
 		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml:3:5-39
 		INJECTED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml
@@ -33,7 +33,7 @@ ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_An
 	android:name
 		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml:12:22-78
 application
-ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml:14:5-47:19
+ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml:14:5-51:19
 MERGED from [com.android.support:support-v4:22.2.1] C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml:17:9-41
@@ -71,19 +71,25 @@ ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_An
 		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml:34:19-69
 	android:name
 		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml:33:13-51
-activity#com.example.ppamattester.MakeLocNetworkElementActivity
+activity#com.example.ppamattester.MakeLightElementActivity
 ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml:36:9-39:20
 	android:configChanges
-		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml:38:19-69
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml:38:13-63
 	android:name
-		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml:37:13-58
-activity#com.example.ppamattester.MakeLocGpsElementActivity
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml:37:13-53
+activity#com.example.ppamattester.MakeLocNetworkElementActivity
 ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml:40:9-43:20
 	android:configChanges
 		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml:42:19-69
 	android:name
-		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml:41:13-54
-activity#com.example.ppamattester.RunScriptActivity
-ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml:44:9-46:20
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml:41:13-58
+activity#com.example.ppamattester.MakeLocGpsElementActivity
+ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml:44:9-47:20
+	android:configChanges
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml:46:19-69
 	android:name
-		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml:45:13-46
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml:45:13-54
+activity#com.example.ppamattester.RunScriptActivity
+ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml:48:9-50:20
+	android:name
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2Tester\src\main\AndroidManifest.xml:49:13-46

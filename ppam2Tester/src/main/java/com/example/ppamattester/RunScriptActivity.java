@@ -47,6 +47,8 @@ public class RunScriptActivity extends Activity {
 	private SensorManager mSensorManager;
 	private Sensor mAcc;
 	private mAccListener mAccL;
+	private Sensor mLight;
+	private mLightListener mLightL;
 	
 	// loc sensor
 	private LocationManager mLocMan;
@@ -78,11 +80,6 @@ public class RunScriptActivity extends Activity {
         setContentView(R.layout.activity_runscript);
         scriptView = (ListView)findViewById(R.id.script_viewer_run);
         
-        if(listElements.size()==0){
-			Toast.makeText(getApplicationContext(), "Script is empty\nReturn to main page", Toast.LENGTH_SHORT).show();
-			finish();
-        }
-        
         ArrayAdapter<TestScriptElement> adapter;
         adapter = new ArrayAdapter<TestScriptElement>(this, android.R.layout.simple_list_item_1, listElements);
         scriptView.setAdapter(adapter);
@@ -105,7 +102,13 @@ public class RunScriptActivity extends Activity {
         if(D) Log.e(TAG, "++ ON START ++");
 
         setupAcc();
+		setupLight();
         setupLoc();
+
+		if(listElements.size()==0){
+			Toast.makeText(getApplicationContext(), "Script is empty\nReturn to main page", Toast.LENGTH_SHORT).show();
+			finish();
+		}
     }
 
     @Override
@@ -129,7 +132,8 @@ public class RunScriptActivity extends Activity {
     @Override
     public void onDestroy() {
         if(D) Log.e(TAG, "--- ON DESTROY ---");
-		
+
+		mSensorManager.unregisterListener(mLightL);
 		mSensorManager.unregisterListener(mAccL);
     	mLocMan.removeUpdates(mGpsListener);
     	mLocMan.removeUpdates(mNetworkListener);
@@ -150,6 +154,7 @@ public class RunScriptActivity extends Activity {
 		}
 		else if(testElement instanceof EndElement){
 			mSensorManager.unregisterListener(mAccL);
+			mSensorManager.unregisterListener(mLightL);
 	    	mLocMan.removeUpdates(mGpsListener);
 	    	mLocMan.removeUpdates(mNetworkListener);
 			tester.setText(testElement.toString());
@@ -163,6 +168,17 @@ public class RunScriptActivity extends Activity {
 		else if(testElement instanceof AccEndElement){
         	Log.d("RunScriptActivity", "AccEndElement ** ");  
 			mSensorManager.unregisterListener(mAccL);
+			tester.setText(testElement.toString());
+		}
+		else if(testElement instanceof LightElement){
+			Log.d("RunScriptActivity", "LightElement ** ");
+			mSensorManager.unregisterListener(mLightL);
+			mSensorManager.registerListener(mLightL, mLight, ((LightElement) testElement).getMode());
+			tester.setText(testElement.toString());
+		}
+		else if(testElement instanceof LightEndElement){
+			Log.d("RunScriptActivity", "LightEndElement ** ");
+			mSensorManager.unregisterListener(mLightL);
 			tester.setText(testElement.toString());
 		}
 		else if(testElement instanceof GpsElement){
@@ -207,6 +223,13 @@ public class RunScriptActivity extends Activity {
 		mAcc = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
 		mAccL = new mAccListener();
     }
+
+	private void setupLight() {
+
+		mSensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
+		mLight = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+		mLightL = new mLightListener();
+	}
     
     private void setupLoc(){
 
@@ -241,21 +264,27 @@ public class RunScriptActivity extends Activity {
 
 		@Override
 		public void onAccuracyChanged(Sensor arg0, int arg1) {
-			
+			Log.d("RunScriptActivity", "AccAccuracyChanged **");
 		}
 
 		@Override
 		public void onSensorChanged(SensorEvent arg0) {
-			// 가속도 센서의 센서값의 경우,
-			// arg0[0], [1], [2] 가 각각,
-			// x, y, z 축의 측정값이며, 모든 값들은 중력 요소가 지워져있다.
-			// 센서 값 변동 시,
-//			Log.d("MainActivity", "ACC / onSensorChanged ***");
-//			tvAccVal_X.setText("Acc X : " + Double.toString(arg0.values[0]));
-//			tvAccVal_Y.setText("Acc Y : " + Double.toString(arg0.values[1]));
-//			tvAccVal_Z.setText("Acc Z : " + Double.toString(arg0.values[2]));
+			Log.d("RunScriptActivity", "AccValueChanged **");
 		}
-	}	
+	}
+
+	private class mLightListener implements SensorEventListener{
+
+		@Override
+		public void onAccuracyChanged(Sensor arg0, int arg1) {
+			Log.d("RunScriptActivity", "LightAccuracyChanged **");
+		}
+
+		@Override
+		public void onSensorChanged(SensorEvent arg0) {
+			Log.d("RunScriptActivity", "LightValueChanged **");
+		}
+	}
 
 	private class mGpsLocationListener implements LocationListener {
 

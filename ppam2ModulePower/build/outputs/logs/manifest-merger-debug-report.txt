@@ -1,0 +1,99 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:2:1-52:12
+	package
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:3:5-43
+		INJECTED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:5:5-30
+	android:versionCode
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:22.2.1] C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:20:5-43
+	android:targetSdkVersion
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:8:9-35
+		INJECTED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:10:5-73
+	android:name
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:10:22-71
+uses-permission#android.permission.BLUETOOTH
+ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:11:22-65
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:12:5-78
+	android:name
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:12:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:13:5-80
+	android:name
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:13:22-78
+application
+ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:15:5-50:19
+MERGED from [com.android.support:support-v4:22.2.1] C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:18:9-41
+	android:allowBackup
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:16:9-35
+	android:icon
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:17:9-45
+	android:theme
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:19:9-40
+activity#com.example.ppam2modulepower.MainActivity
+ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:20:9-28:20
+	android:label
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:22:13-45
+	android:name
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:21:13-41
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:23:13-27:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:24:17-69
+	android:name
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:24:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:26:17-77
+	android:name
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:26:27-74
+activity#com.example.ppam2modulepower.MakeScriptActivity
+ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:29:9-31:20
+	android:name
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:30:13-47
+activity#com.example.ppam2modulepower.MakeAccElementActivity
+ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:32:9-34:20
+	android:name
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:33:13-51
+activity#com.example.ppam2modulepower.MakeLocNetworkElementActivity
+ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:35:9-37:20
+	android:name
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:36:13-58
+activity#com.example.ppam2modulepower.MakeLocGpsElementActivity
+ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:38:9-40:20
+	android:name
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:39:13-54
+activity#com.example.ppam2modulepower.RunScriptActivity
+ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:41:9-43:20
+	android:name
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:42:13-46
+activity#com.example.ppam2modulepower.DeviceListActivity
+ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:44:9-49:20
+	android:label
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:46:13-50
+	android:configChanges
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:48:13-63
+	android:theme
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:47:13-56
+	android:name
+		ADDED from C:\Users\illion\Desktop\Research\ppam\app\AndroidStudio\MobileTeam_AndroidApplications\ppam2ModulePower\src\main\AndroidManifest.xml:45:13-47

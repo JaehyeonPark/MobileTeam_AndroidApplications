@@ -61,9 +61,6 @@ public class CommandSenderService extends Service {
     
     private int gpsStatus = -1;
     private int locationListener = 0;
-
-	String gpsStatusName = "GPS_EVENT_UNKNOWN";
-	String locationListenerName = "GPS_UNKNOWN";	
 	
 	String buttonActionFilter = "ppam.test.bnt";
 	String bluetoothActionFilter = "ppam.test.bluetooth";

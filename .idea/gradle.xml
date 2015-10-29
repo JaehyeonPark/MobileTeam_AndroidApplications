@@ -10,7 +10,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/ppam2ModulePower" />
             <option value="$PROJECT_DIR$/ppam2Observer" />
+            <option value="$PROJECT_DIR$/ppam2PassiveController" />
             <option value="$PROJECT_DIR$/ppam2Tester" />
           </set>
         </option>

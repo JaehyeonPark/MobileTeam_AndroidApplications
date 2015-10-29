@@ -58,14 +58,14 @@ class EndElement extends TestScriptElement {
 class AccElement extends TestScriptElement {
 
 	private int mode;
-	
+
 	public AccElement(int dueTime, int mode) {
 		// TODO Auto-generated constructor stub
 		this.setElementName("Accelerometer");
 		this.setMode(mode);
 		this.setDueTime(dueTime);
 	}
-	
+
 	public int getMode() {
 		return mode;
 	}
@@ -91,6 +91,45 @@ class AccEndElement extends TestScriptElement {
 		// TODO Auto-generated constructor stub
 		this.setDueTime(time);
 		this.setElementName("AccEnd");
+	}
+}
+
+class LightElement extends TestScriptElement {
+
+	private int mode;
+
+	public LightElement(int dueTime, int mode) {
+		// TODO Auto-generated constructor stub
+		this.setElementName("Illumination");
+		this.setMode(mode);
+		this.setDueTime(dueTime);
+	}
+
+	public int getMode() {
+		return mode;
+	}
+
+	public void setMode(int mode) {
+		this.mode = mode;
+	}
+
+	@Override
+	public String toString() {
+		return 	getElementName()+" "+
+				"mode("+getMode()+") "+
+				"dueTime("+getDueTime()+")";
+	}
+}
+
+class LightEndElement extends TestScriptElement {
+	public LightEndElement() {
+		// TODO Auto-generated constructor stub
+		this.setElementName("LightEnd");
+	}
+	public LightEndElement(int time) {
+		// TODO Auto-generated constructor stub
+		this.setDueTime(time);
+		this.setElementName("LightEnd");
 	}
 }
 

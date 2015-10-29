@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ppamoc2.BluetoothChat" >
+
+    <item android:id="@+id/scan"
+          android:icon="@android:drawable/ic_menu_search"
+          android:title="@string/connect" />
+    <item android:id="@+id/discoverable"
+          android:icon="@android:drawable/ic_menu_mylocation"
+          android:title="@string/discoverable" />
+</menu><!-- From: file:/C:/Users/illion/Desktop/Research/ppam/app/AndroidStudio/MobileTeam_AndroidApplications/ppam2PassiveController/src/main/res/menu/option_menu.xml -->

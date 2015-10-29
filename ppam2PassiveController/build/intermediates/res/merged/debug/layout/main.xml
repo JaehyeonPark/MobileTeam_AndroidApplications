@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    >
+	    <Button android:id="@+id/button_new"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+            android:layout_weight="1"
+	        android:text="@string/newfile"
+	 	/>
+	    <Button android:id="@+id/button_start"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+            android:layout_weight="1"
+	        android:text="@string/start"
+	 	/>
+	</LinearLayout>
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+	    <Button android:id="@+id/button_wrrt"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+            android:layout_weight="1"
+	        android:text="@string/wrrt"
+	 	/>
+	    <Button android:id="@+id/button_end"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+            android:layout_weight="1"
+	        android:text="@string/end"
+	 	/>
+	</LinearLayout>
+	<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    >
+	    <EditText android:id="@+id/edit_text_msg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+        />
+	    <Button android:id="@+id/button_msgstart"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/msgstart"
+            android:layout_weight="1"
+	 	/>
+	    <Button android:id="@+id/button_msgend"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+            android:layout_weight="1"
+	        android:text="@string/msgend"
+	 	/>
+	</LinearLayout>
+	<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+	    <Button android:id="@+id/button_substart"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@string/substart"
+	 	/>
+	    <Button android:id="@+id/button_subend"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+            android:layout_weight="1"
+	        android:text="@string/subend"
+	 	/>
+	    <Button android:id="@+id/button_rtc"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+            android:layout_weight="1"
+	        android:text="@string/rtc"
+	 	/>
+	</LinearLayout>
+    
+    <ListView android:id="@+id/in"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        android:layout_weight="1"
+    	android:layout_marginTop="20dp"
+    />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <EditText android:id="@+id/edit_text_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+        />
+        <Button android:id="@+id/button_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send"
+        />
+    </LinearLayout>
+</LinearLayout>
+<!-- From: file:/C:/Users/illion/Desktop/Research/ppam/app/AndroidStudio/MobileTeam_AndroidApplications/ppam2PassiveController/src/main/res/layout/main.xml -->
